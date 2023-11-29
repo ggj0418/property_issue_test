@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  tomcat:
+    connection-timeout: 3000
+
+outer-example-service:
+  url: "http://${EXAMPLE_SERVICE_URL}:8081"
+
+outer-service:
+  url: "http://${EXAMPLE_SERVICE_URL}:8081"
